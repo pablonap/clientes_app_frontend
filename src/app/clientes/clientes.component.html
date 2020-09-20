@@ -22,6 +22,7 @@
           <th>email</th>
           <th>fecha</th>
           <th>editar</th>
+          <th>eliminar</th>
         </tr>
       </thead>
       <tbody>
@@ -40,6 +41,9 @@
             >
               editar
             </button>
+          </td>
+           <td>
+            <button type="button" name="eliminar" (click)='delete(cliente)' class="btn btn-danger btn-sm">eliminar</button>
           </td>
         </tr>
       </tbody>
