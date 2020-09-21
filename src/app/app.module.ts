@@ -11,6 +11,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './clientes/form.component';
 import { FormsModule } from '@angular/forms';
+import { AreaComponent } from './area/area.component';
+import { ServiceBudgetComponent } from './service-budget/service-budget.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'clientes', pathMatch: 'full' },
@@ -28,6 +30,8 @@ const routes: Routes = [
     DirectivaComponent,
     ClientesComponent,
     FormComponent,
+    AreaComponent,
+    ServiceBudgetComponent,
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule, RouterModule.forRoot(routes)],
   providers: [ClienteService],
